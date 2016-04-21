@@ -1,0 +1,26 @@
+{
+  "name": "angular-event-manager",
+  "version": "1.0.0",
+  "description": "Event Manager for Angular JS",
+  "main": "angular-event-manager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nebo15/angular-event-manager.git"
+  },
+  "keywords": [
+    "events",
+    "event",
+    "manager",
+    "angualr",
+    "js"
+  ],
+  "author": "Alexey Bondarenko <bondalex.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nebo15/angular-event-manager/issues"
+  },
+  "homepage": "https://github.com/Nebo15/angular-event-manager#readme"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "angular-event-manager",
+  "description": "Event Manager for Angular JS",
+  "main": "angular-event-manager.js",
+  "authors": [
+    "Alexey Bondarenko <bondalex.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "events",
+    "event",
+    "manager",
+    "angualr",
+    "js"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
