@@ -112,4 +112,17 @@ angular.module('eventManager', []).provider('EventManager', function () {
             return new EventManager(this.config);
         }
     };
-});
+}).directive('trackEvent', ['EventManager', function (EventManager) {
+
+    // track-event="EventName"
+    // track-event-name="click|mouseup|..."
+    // track-event-data="data object"
+    return {
+        restrict: 'A',
+        link: function (scope, el, attrs) {
+            el.bind(attrs.trackEventName || 'click', function () {
+                EventManager.track(attrs.trackEvent, scope.$eval(attrs.trackEventData));
+            });
+        }
+    };
+}]);
