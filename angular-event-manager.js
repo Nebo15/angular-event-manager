@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('eventManager').provider('EventManager', function () {
+angular.module('eventManager', []).provider('EventManager', function () {
 
     return {
         config: {
