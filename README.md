@@ -2,7 +2,7 @@
 
 Event Manager for Angular JS apps.
 
-It's simple realization of event manager. You can use it for simplify tracking events in your app in single place and then send event to the several external service. 
+It's simple implementation of event manager. You can use it for simplify tracking events in your app in single object and then send event to the several external services. 
 
 ## How to install
 
