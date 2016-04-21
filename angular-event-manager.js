@@ -6,7 +6,7 @@ angular.module('eventManager', []).provider('EventManager', function () {
         config: {
             global_handlers_name: '$$_global'
         },
-        $get: function ($log) {
+        $get: ['$log', function ($log) {
 
             function EventManager (__config) {
                 this.handlers = {};
@@ -110,7 +110,7 @@ angular.module('eventManager', []).provider('EventManager', function () {
             }
 
             return new EventManager(this.config);
-        }
+        }]
     };
 }).directive('trackEvent', ['EventManager', function (EventManager) {
 
