@@ -107,9 +107,6 @@ angular.module('eventManager').provider('EventManager', function () {
                     this.unsubscribe(GLOBAL_HANDLERS_NAME, fn);
                 };
 
-                this.getUrlForEvent = function (event) {
-                    return location.origin + '/event.html?event=' + event;
-                };
             }
 
             return new EventManager(this.config);

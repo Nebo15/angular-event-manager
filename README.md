@@ -1,2 +1,44 @@
-# angular-event-manager
-Event Manager for Angular JS apps
+# Angular Event Manager
+
+Event Manager for Angular JS apps.
+
+It's simple realization of event manager. You can use it for simplify tracking events in your app in single place and then send event to the several external service. 
+
+## How to install
+
+```
+bower install angular-event-manager --save
+```
+
+### Example
+
+```
+
+// tracking event
+
+angular.module('app').controller('AppController', function ($scope, EventManager) {
+
+    EventManager.track('AppControlerOpen', {data: 'example'});
+    
+});
+
+// subscribe to event
+
+angular.module('app').run(function (EventManager, $mixpanel) {
+
+    EventManager.subscribe(['AppControlerOpen'], function (eventName, data) {
+        
+        // you can track here event for external services
+        // eg, $mixpanel.track(eventName);
+        
+    }); 
+    
+    EventManager.subscribeAll(function (name, data) {
+        // receive all events
+    });
+    
+    EventManager.unsubscribe(['Event1', 'Event2'], function () {});
+    EventManager.unsubscribeAll(function () {});
+    
+});
+```
