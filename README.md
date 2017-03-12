@@ -1,5 +1,7 @@
 # Angular Event Manager
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Nebo15/angular-event-manager.svg)](https://greenkeeper.io/)
+
 Event Manager for Angular JS apps.
 
 It's simple implementation of event manager. You can use it for simplify tracking events in your app in single object and then send event to the several external services. 
